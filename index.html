@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio</title>
+  <title>Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -19,11 +19,13 @@
     <ul class="nav__links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
       <li><a href="#formacao">Formação</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
-    </nav>
+  </nav>
 
+  <!-- ══ HERO ══ -->
   <section class="hero" id="sobre">
     <div class="hero__badge">
       <span class="badge-dot"></span>
@@ -36,7 +38,8 @@
     </h1>
 
     <p class="hero__description">
-      Olá! Sou um Estudante de Informática com base sólida em redes, banco de dados, Excel e desenvolvedor full-stack com especialidade em JavaScript, Python, HTML e CSS.
+      Olá! Sou um Estudante de Informática com base sólida em redes, banco de dados, Excel e
+      desenvolvedor full-stack com especialidade em JavaScript, Python, HTML e CSS.
     </p>
 
     <div class="hero__actions">
@@ -66,6 +69,7 @@
     <div class="hero__line"></div>
   </section>
 
+  <!-- ══ HABILIDADES ══ -->
   <section class="section" id="habilidades">
     <div class="container">
       <div class="section-header">
@@ -73,7 +77,8 @@
       </div>
 
       <div class="skills-grid">
-        <div class="skill-card" data-delay="50">
+
+        <div class="skill-card">
           <div class="skill-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <circle cx="12" cy="12" r="10"/>
@@ -83,17 +88,17 @@
           </div>
           <h3 class="skill-card__title">Redes</h3>
           <ul class="skill-card__list">
-            <li>VLAN &amp; Roteamento,</li>
-            <li>DHCP, IPv4 &amp; Sub-redes,</li>
-            <li>Conhecimentos em modelo OSI &amp; Protocolo TCP/IP,</li>
-            <li>Diagnóstico &amp; Solução de problemas de conectividade.</li>
+            <li>VLAN &amp; Roteamento</li>
+            <li>DHCP, IPv4 &amp; Sub-redes</li>
+            <li>Modelo OSI &amp; Protocolo TCP/IP</li>
+            <li>Diagnóstico &amp; Solução de problemas de conectividade</li>
           </ul>
           <div class="skill-card__bar">
             <div class="skill-card__bar-fill" style="width: 60%"></div>
           </div>
         </div>
 
-        <div class="skill-card" data-delay="100">
+        <div class="skill-card">
           <div class="skill-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -103,17 +108,17 @@
           </div>
           <h3 class="skill-card__title">Banco de Dados</h3>
           <ul class="skill-card__list">
-            <li>MySQL &amp; Consultas SQL,</li>
-            <li>Criação de Tabelas &amp; Relacionamentos,</li>
-            <li>Modelagem de sistemas com UML,</li>
-            <li>Desenvolvimento de Diagramas de Caso de Uso.</li>
+            <li>MySQL &amp; Consultas SQL</li>
+            <li>Criação de Tabelas &amp; Relacionamentos</li>
+            <li>Modelagem de sistemas com UML</li>
+            <li>Diagramas de Caso de Uso</li>
           </ul>
           <div class="skill-card__bar">
             <div class="skill-card__bar-fill" style="width: 70%"></div>
           </div>
         </div>
 
-        <div class="skill-card" data-delay="150">
+        <div class="skill-card">
           <div class="skill-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="3" y="3" width="18" height="18" rx="2"/>
@@ -124,36 +129,36 @@
           </div>
           <h3 class="skill-card__title">Excel</h3>
           <ul class="skill-card__list">
-            <li>Funções Básicas,</li>
-            <li>Organização de Tabelas,</li>
-            <li>Criação de Gráficos,</li>
-            <li>Pacote Office.</li>
+            <li>Funções Básicas</li>
+            <li>Organização de Tabelas</li>
+            <li>Criação de Gráficos</li>
+            <li>Pacote Office</li>
           </ul>
           <div class="skill-card__bar">
             <div class="skill-card__bar-fill" style="width: 80%"></div>
           </div>
         </div>
 
-        <div class="skill-card" data-delay="200">
+        <div class="skill-card">
           <div class="skill-card__icon">
-            <svg viewBox="0 0 128 128" fill="currentColor">
-              <path d="M2 1h124v126H2z"/>
-              <path fill="#000" d="M80.6 99.2c2.5 4 5.8 7 11.5 7 4.8 0 7.9-2.4 7.9-5.8 0-4-3.2-5.5-8.5-7.8l-2.9-1.2c-8.3-3.5-13.8-7.9-13.8-17.2 0-8.6 6.5-15.1 16.7-15.1 7.3 0 12.5 2.5 16.3 9.1l-8.9 5.7c-2-3.5-4.1-4.9-7.4-4.9-3.4 0-5.5 2.1-5.5 4.9 0 3.4 2.1 4.8 7 7l2.9 1.2c9.8 4.2 15.3 8.4 15.3 18 0 10.3-8.1 15.9-18.9 15.9-10.6 0-17.5-5-20.9-11.6zm-40.4 1c1.8 3.2 3.4 5.9 7.4 5.9 3.8 0 6.2-1.5 6.2-7.2V59.8h11.5v39.3c0 11.9-7 17.3-17.2 17.3-9.2 0-14.5-4.8-17.2-10.6z"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
             </svg>
           </div>
           <h3 class="skill-card__title">Programação Web</h3>
           <ul class="skill-card__list">
-            <li>Fundamentos de Front-end &amp; Back-end utilizando JavaScript,</li>
-            <li>Estruturação de páginas web com HTML,</li>
-            <li>Estilização &amp; Organização visual com CSS,</li>
-            <li>Conhecimentos básicos em Lógica de Programação &amp; Desenvolvimento Web.</li>
+            <li>Front-end &amp; Back-end Utilizando JavaScript</li>
+            <li>Estruturação de páginas com HTML</li>
+            <li>Estilização &amp; Layout com CSS</li>
+            <li>Conhecimento Técnico em Lógica de Programação &amp; Desenvolvimento Web</li>
           </ul>
           <div class="skill-card__bar">
             <div class="skill-card__bar-fill" style="width: 90%"></div>
           </div>
         </div>
 
-        <div class="skill-card" data-delay="300">
+        <div class="skill-card">
           <div class="skill-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="2" y="3" width="20" height="14" rx="2"/>
@@ -163,47 +168,63 @@
           </div>
           <h3 class="skill-card__title">Outros</h3>
           <ul class="skill-card__list">
-            <li>Windows &amp; Terminal(CMD),</li>
-            <li>Uso de IA para pesquisa &amp; Interpretação de dados,</li>
-              <li>VS Code &amp; Ambiente de desenvolvimento,</li>
-            <li>Organização de Arquivos &amp; Versionamento de projetos.</li>
+            <li>Windows &amp; Terminal (CMD)</li>
+            <li>IA para pesquisa &amp; Interpretação de dados</li>
+            <li>VS Code &amp; Ambiente de desenvolvimento</li>
+            <li>Organização de Arquivos &amp; Versionamento de projetos</li>
           </ul>
           <div class="skill-card__bar">
             <div class="skill-card__bar-fill" style="width: 100%"></div>
           </div>
         </div>
+
       </div>
 
+      <!-- Soft Skills -->
       <div class="soft-skills">
         <div class="section-header" style="margin-top: 5rem; margin-bottom: 1.5rem;">
           <p class="section-label">// habilidades interpessoais</p>
         </div>
         <div class="soft-grid">
-          <div class="soft-tag">
-            <span class="soft-tag__icon">◈</span>
-            <span>Trabalho em equipe</span>
-          </div>
-          <div class="soft-tag">
-            <span class="soft-tag__icon">◈</span>
-            <span>Aprendizado rápido</span>
-          </div>
-          <div class="soft-tag">
-            <span class="soft-tag__icon">◈</span>
-            <span>Boa comunicação</span>
-          </div>
-          <div class="soft-tag">
-            <span class="soft-tag__icon">◈</span>
-            <span>Desenvolvimento contínuo</span>
-          </div>
+          <div class="soft-tag"><span class="soft-tag__icon">◈</span><span>Trabalho em equipe</span></div>
+          <div class="soft-tag"><span class="soft-tag__icon">◈</span><span>Aprendizado rápido</span></div>
+          <div class="soft-tag"><span class="soft-tag__icon">◈</span><span>Boa comunicação</span></div>
+          <div class="soft-tag"><span class="soft-tag__icon">◈</span><span>Desenvolvimento contínuo</span></div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <section class="section section--dark" id="formacao">
+  <!-- ══ PROJETOS ══ -->
+  <section class="section section--dark" id="projetos">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">// 02 — formação</p>
+        <p class="section-label">// 02 — projetos</p>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-sub">Em breve os projetos desenvolvidos aparecerão aqui.</p>
+      </div>
+
+      <div class="empty-state">
+        <div class="empty-state__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            <line x1="12" y1="11" x2="12" y2="17"/>
+            <line x1="9" y1="14" x2="15" y2="14"/>
+          </svg>
+        </div>
+        <p class="empty-state__title">Nenhum projeto ainda</p>
+        <p class="empty-state__sub">Volte em breve — novos projetos serão adicionados aqui.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FORMAÇÃO ══ -->
+  <section class="section" id="formacao">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">// 03 — formação</p>
       </div>
 
       <div class="timeline">
@@ -225,14 +246,34 @@
           </div>
         </div>
       </div>
+
+      <!-- Certificados (sem item de nav próprio) -->
+      <div class="certs-block">
+        <div class="certs-header">
+          <p class="section-label">// certificados</p>
+        </div>
+
+        <div class="empty-state">
+          <div class="empty-state__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <p class="empty-state__title">Nenhum certificado ainda</p>
+          <p class="empty-state__sub">Os certificados conquistados aparecerão aqui em breve.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="section" id="objetivo">
+  <!-- ══ OBJETIVO ══ -->
+  <section class="section section--dark" id="objetivo">
     <div class="container">
       <div class="objetivo-card">
         <div class="objetivo-card__glow"></div>
-        <p class="section-label">// 03 — objetivo</p>
+        <p class="section-label">// 04 — objetivo</p>
         <blockquote class="objetivo-card__text">
           Busco uma oportunidade de <strong>estágio ou jovem aprendiz</strong> na área de TI
           para aplicar os conhecimentos adquiridos e desenvolver habilidades técnicas,
@@ -242,15 +283,17 @@
     </div>
   </section>
 
-  <section class="section section--dark" id="contato">
+  <!-- ══ CONTATO ══ -->
+  <section class="section" id="contato">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">// 04 — contato</p>
+        <p class="section-label">// 05 — contato</p>
         <h2 class="section-title">Vamos conversar?</h2>
         <p class="section-sub">Estou disponível para oportunidades de estágio e jovem aprendiz na área de TI.</p>
       </div>
 
       <div class="contact-grid">
+
         <a href="mailto:arthurabulhoes@gmail.com" class="contact-card">
           <div class="contact-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -259,6 +302,7 @@
             <span class="contact-card__label">E-mail</span>
             <span class="contact-card__value contact-card__value--email">arthurabulhoes@gmail.com</span>
           </div>
+          <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
 
         <a href="https://wa.me/5594984372232" target="_blank" rel="noopener noreferrer" class="contact-card">
@@ -266,8 +310,22 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.36 19.36 0 0 1 1.64 4.58 2 2 0 0 1 3.62 2.37h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.88-1.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </div>
           <div class="contact-card__info">
-            <span class="contact-card__label">Telefone / WhatsApp</span>
+            <span class="contact-card__label">WhatsApp</span>
             <span class="contact-card__value">(94) 98437-2232</span>
+          </div>
+          <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/arthur-abreu-ofc" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="icon-github">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </div>
+          <div class="contact-card__info">
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">arthur-abreu-ofc</span>
           </div>
           <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -281,6 +339,7 @@
             <span class="contact-card__value">Marabá – Pará, Brasil</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -290,31 +349,29 @@
   </footer>
 
   <script>
+    /* Revela elementos ao entrar na viewport */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12 });
 
-    document.querySelectorAll('.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card').forEach(el => {
-      observer.observe(el);
-    });
+    document.querySelectorAll(
+      '.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card, .empty-state'
+    ).forEach(el => observer.observe(el));
 
+    /* Nav — link ativo + shrink ao rolar */
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__links a');
 
     window.addEventListener('scroll', () => {
       let current = '';
-      
+
       sections.forEach(section => {
         const sectionTop = section.offsetTop - 160;
         if (window.scrollY >= sectionTop) {
           const id = section.getAttribute('id');
-          if (document.querySelector(`.nav__links a[href="#${id}"]`)) {
-            current = id;
-          }
+          if (document.querySelector(`.nav__links a[href="#${id}"]`)) current = id;
         }
       });
 
@@ -328,9 +385,6 @@
 
       document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
     });
-
-    const cursor = document.querySelector('.type-cursor');
-    setInterval(() => cursor.classList.toggle('blink'), 600);
   </script>
 
 </body>
