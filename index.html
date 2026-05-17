@@ -247,7 +247,7 @@
         </div>
       </div>
 
-      <!-- Certificados (sem item de nav próprio) -->
+      <!-- Certificados -->
       <div class="certs-block">
         <div class="certs-header">
           <p class="section-label">// certificados</p>
@@ -316,7 +316,6 @@
           <svg class="contact-card__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
 
-        <!-- GitHub -->
         <a href="https://github.com/arthur-abreu-ofc" target="_blank" rel="noopener noreferrer" class="contact-card">
           <div class="contact-card__icon">
             <svg viewBox="0 0 24 24" fill="currentColor" class="icon-github">
@@ -349,7 +348,6 @@
   </footer>
 
   <script>
-    /* Revela elementos ao entrar na viewport */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -360,7 +358,6 @@
       '.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card, .empty-state'
     ).forEach(el => observer.observe(el));
 
-    /* Nav — link ativo + shrink ao rolar */
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__links a');
 
