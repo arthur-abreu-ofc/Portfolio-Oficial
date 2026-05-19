@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio</title>
+  <title>Portfólio — Arthur Abreu Bulhões</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -14,6 +14,7 @@
   <div class="noise"></div>
   <div class="grid-bg"></div>
 
+  <!-- ══ NAV ══ -->
   <nav class="nav">
     <div class="nav__logo"><span class="accent"><</span>Portfólio<span class="accent">></span></div>
     <ul class="nav__links">
@@ -229,6 +230,7 @@
 
       <div class="timeline">
         <div class="timeline__track"></div>
+
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
@@ -245,37 +247,51 @@
             </p>
           </div>
         </div>
+
       </div>
 
-      <!-- Certificados -->
+      <!-- ══ CERTIFICADOS ══ -->
       <div class="certs-block">
         <div class="certs-header">
           <p class="section-label">// certificados</p>
         </div>
 
-  <div class="certs-grid">
-    <div class="cert-card">
-      <div class="cert-card__badge">Live / Workshop</div>
-      <h3 class="cert-card__title">O Futuro é Tech: Descubra Qual Carreira dá Match com Você</h3>
-      
-      <p class="cert-card__institution">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
-        </svg>
-        FIAP + Alura — Semana Carreira Tech
-      </p>
+        <div class="certs-grid">
 
-      <img src="https://s3.amazonaws.com/emissao-certificados/Certificados/e4ec5b45-0fbd-4120-a929-b50947329f5c.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVI5Y77JGP7GPYD74%2F20260519%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260519T031113Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=97e451bd6a18151d1247b4ce075e6cb95601602838d3e2e3a02bccbe6aeabc57" alt="Certificado Carreira Tech" class="cert-card__img">
-      
-      <p class="cert-card__period">19 de Maio de 2026 &nbsp;·&nbsp; Carga horária: 1 hora</p>
-      
-      <p class="cert-card__desc">
-        Participação em evento focado em engenharia de carreira e mapeamento do ecossistema de tecnologia. A palestra abordou as principais vertentes do mercado tech, demandas de contratação atuais e orientação profissional para alinhar habilidades técnicas às necessidades reais do mercado.
-      </p>
-    </div>
-  </div>
-</div>
+          <!-- Certificado 1 -->
+          <div class="cert-card">
+            <div class="cert-card__badge">Live / Workshop</div>
+            <h3 class="cert-card__title">O Futuro é Tech: Descubra Qual Carreira dá Match com Você</h3>
+
+            <p class="cert-card__institution">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+              </svg>
+              FIAP + Alura — Semana Carreira Tech
+            </p>
+
+            <img
+              src="https://s3.amazonaws.com/emissao-certificados/Certificados/e4ec5b45-0fbd-4120-a929-b50947329f5c.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVI5Y77JGP7GPYD74%2F20260519%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260519T034437Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=886f538e93789b79f472a8b265fd95b86fe41f6ed9a9c01665e958e37dd2de32"
+              alt="Certificado — O Futuro é Tech: Descubra Qual Carreira dá Match com Você"
+              class="cert-card__img"
+              loading="lazy"
+            />
+
+            <p class="cert-card__period">19 de Maio de 2026 &nbsp;·&nbsp; Carga horária: 1 hora</p>
+
+            <p class="cert-card__desc">
+              Participação em evento focado em engenharia de carreira e mapeamento do ecossistema de
+              tecnologia. A palestra abordou as principais vertentes do mercado tech, demandas de
+              contratação atuais e orientação profissional para alinhar habilidades técnicas às
+              necessidades reais do mercado.
+            </p>
+          </div>
+
+          <!-- Adicione novos cert-card aqui no futuro -->
+
+        </div>
+      </div>
 
     </div>
   </section>
@@ -355,23 +371,30 @@
     </div>
   </section>
 
+  <!-- ══ FOOTER ══ -->
   <footer class="footer">
     <p>Desenvolvido por <strong>Arthur Abreu Bulhões</strong> &nbsp;·&nbsp; 2026</p>
   </footer>
 
   <script>
+    /* ── Intersection Observer: anima elementos ao entrar na tela ── */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); /* dispara só uma vez */
+        }
       });
     }, { threshold: 0.12 });
 
     document.querySelectorAll(
-      '.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card, .empty-state'
+      '.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card, .empty-state, .cert-card'
     ).forEach(el => observer.observe(el));
 
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav__links a');
+    /* ── Nav: active link + scrolled state ── */
+    const sections  = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav__links a');
+    const nav       = document.querySelector('.nav');
 
     window.addEventListener('scroll', () => {
       let current = '';
@@ -392,7 +415,7 @@
         a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
       });
 
-      document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 50);
+      nav.classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 
