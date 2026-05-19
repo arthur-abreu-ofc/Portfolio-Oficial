@@ -536,6 +536,14 @@ ul { list-style: none; }
   gap: 1.5rem;
 }
 
+.cert-card__img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 1rem 0;
+  border: 1px solid var(--clr-border);
+}
+
 .cert-card {
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
