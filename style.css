@@ -3,7 +3,7 @@
 ══════════════════════════════════════════ */
 :root {
   --clr-bg:          #0a060f;
-  --clr-bg-alt:      #0f0a18;
+  --clr-bg__alt:      #0f0a18;
   --clr-surface:     #140d1f;
   --clr-surface-2:   #1c1230;
   --clr-border:      #2a1a42;
@@ -330,7 +330,7 @@ ul { list-style: none; }
   padding: clamp(4rem, 7vw, 5.5rem) 0;
 }
 
-.section--dark { background: var(--clr-bg-alt); }
+.section--dark { background: var(--clr-bg__alt); }
 
 .section--dark::before {
   content: '';
@@ -523,6 +523,7 @@ ul { list-style: none; }
   background: var(--clr-purple-soft);
 }
 
+
 /* ══════════════════════════════════════════
    CERTIFICADOS 
 ══════════════════════════════════════════ */
@@ -530,18 +531,14 @@ ul { list-style: none; }
   margin-top: 4rem;
 }
 
+.certs-header {
+  margin-bottom: 1.5rem;
+}
+
 .certs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
-}
-
-.cert-card__img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-sm);
-  margin: 1rem 0;
-  border: 1px solid var(--clr-border);
 }
 
 .cert-card {
@@ -554,6 +551,11 @@ ul { list-style: none; }
   transition: all var(--dur) var(--ease);
   opacity: 0;
   transform: translateY(20px);
+}
+
+.cert-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cert-card::before {
@@ -599,6 +601,15 @@ ul { list-style: none; }
   line-height: 1.3;
 }
 
+.cert-card__img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  margin: 1rem 0;
+  border: 1px solid var(--clr-border);
+  display: block;
+}
+
 .cert-card__institution {
   display: flex;
   align-items: center;
@@ -627,10 +638,6 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
-.cert-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ══════════════════════════════════════════
    TIMELINE
@@ -717,9 +724,6 @@ ul { list-style: none; }
   line-height: 1.7;
   max-width: 650px;
 }
-
-.certs-block { margin-top: 4rem; }
-.certs-header { margin-bottom: 1.5rem; }
 
 
 /* ══════════════════════════════════════════
@@ -848,10 +852,10 @@ ul { list-style: none; }
   overflow-wrap: break-word;
 }
 
-.contact-card__value--email { font-size: 0.88rem; 
+.contact-card__value--email { 
+  font-size: 0.88rem; 
   white-space: nowrap;
 }
-
 
 .contact-card__arrow {
   width: 14px; height: 14px;
