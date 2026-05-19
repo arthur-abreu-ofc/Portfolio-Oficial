@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio — Arthur Abreu Bulhões</title>
+  <title>Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -288,7 +288,7 @@
             </p>
           </div>
 
-          <!-- Adicione novos cert-card aqui no futuro -->
+
 
         </div>
       </div>
@@ -377,12 +377,11 @@
   </footer>
 
   <script>
-    /* ── Intersection Observer: anima elementos ao entrar na tela ── */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); /* dispara só uma vez */
+          observer.unobserve(entry.target); 
         }
       });
     }, { threshold: 0.12 });
@@ -391,7 +390,6 @@
       '.skill-card, .timeline__item, .contact-card, .soft-tag, .objetivo-card, .empty-state, .cert-card'
     ).forEach(el => observer.observe(el));
 
-    /* ── Nav: active link + scrolled state ── */
     const sections  = document.querySelectorAll('section[id]');
     const navLinks  = document.querySelectorAll('.nav__links a');
     const nav       = document.querySelector('.nav');
